@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // @ts-ignore
+  title: window['env']['title'] || 'Title placeholder - dev',
+  // @ts-ignore
+  description: window['env']['description'] || 'Description placeholder - dev',
+  // @ts-ignore
+  test: window['env']['test'] || 'Test - dev'
 };
 
 /*
