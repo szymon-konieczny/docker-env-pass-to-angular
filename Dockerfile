@@ -1,11 +1,3 @@
-
-#FROM ubuntu:trusty
-#RUN \
-#  apt-get update \
-#  && apt-get -y install gettext-base \
-#  && apt-get clean \
-#  && rm -rf /var/lib/apt/lists/*
-
 FROM node:14-alpine as build
 
 WORKDIR /usr/local/app
